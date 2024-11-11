@@ -32,7 +32,7 @@ namespace Monogame_3___Animation
 
             window = new Rectangle(0, 0, 800, 600);
             tribbleGreyRect = new Rectangle(300, 10, 100, 100);
-            tribbleGreySpeed = new Vector2(2, 0);
+            tribbleGreySpeed = new Vector2(2, 2);
 
             _graphics.PreferredBackBufferWidth = window.Width;
             _graphics.PreferredBackBufferHeight = window.Height;
@@ -65,6 +65,8 @@ namespace Monogame_3___Animation
             if (tribbleGreyRect.Right > window.Width || tribbleGreyRect.Left < 0)
                 tribbleGreySpeed.X *= -1;
             tribbleGreyRect.Y += (int)tribbleGreySpeed.Y;
+            if (tribbleGreyRect.Bottom > window.Height || tribbleGreyRect.Top < 0)
+                tribbleGreySpeed.Y *= -1;
 
             base.Update(gameTime);
         }
