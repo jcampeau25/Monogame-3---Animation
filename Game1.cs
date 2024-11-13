@@ -40,13 +40,13 @@ namespace Monogame_3___Animation
 
             window = new Rectangle(0, 0, 800, 600);
             tribbleGreyRect = new Rectangle(300, 10, 100, 100);
-            tribbleGreySpeed = new Vector2(2, 2);
+            tribbleGreySpeed = new Vector2(6, 6);
             tribbleBrownRect = new Rectangle(10, 400, 100, 100);
-            tribbleBrownSpeed = new Vector2(7, 3);
+            tribbleBrownSpeed = new Vector2(10, 3);
             tribbleCreamRect = new Rectangle(400, 400, 100, 100);
-            tribbleCreamSpeed = new Vector2(3, 0);
+            tribbleCreamSpeed = new Vector2(8, 0);
             tribbleOrangeRect = new Rectangle(20, 200, 100, 100);
-            tribbleOrangeSpeed = new Vector2(4, 4);
+            tribbleOrangeSpeed = new Vector2(5, 5);
             
             backgroundRect = new Rectangle(0, 0, 800, 600);
 
